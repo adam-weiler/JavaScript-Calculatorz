@@ -1,0 +1,97 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+#App {
+	position: absolute;
+	left: 50%;
+	-moz-transform: translateX(-50%) translateY(5%);
+	-webkit-transform: translateX(-50%) translateY(5%);
+	transform: translateX(-50%) translateY(5%);
+}
+
+#calculator {
+	width: 375px;
+	display: grid;
+  	grid-template-columns: 76px 76px 76px 76px;
+  	background-color: #000000
+}
+
+#formula { /* Formula Display */
+	grid-column: 1 / 6;
+	max-width: 325px;
+	height: 40px;
+	background-color: #333333;
+	color: #a6a6a6;
+	text-align: right;
+	font-size: 30px;
+	padding: 0 25px;
+	margin: 0px;
+	line-height: 35px;
+}
+
+#display { /* Main Display */
+	grid-column: 1 / 6;
+	max-width: 325px;
+	height: 76px;
+	background-color: #000000;
+	color: #FFFFFF;
+	text-align: right;
+	font-size: 65px;
+	padding: 0 25px;
+	margin: 0px;
+	line-height: 80px;
+}
+
+#allButtons {
+	grid-column: 1 / 6;
+	padding: 5px;
+}
+
+.keyPad {
+	width: 75px;
+	height: 75px;
+	float: left;
+	border-radius: 50%;
+	margin: 7px;
+	font-size: 36px;
+	line-height: 70px;
+	font-family: Helvetica, sans-serif;
+	font-weight: lighter;
+}
+
+#divide { /* Divide button. */
+	font-size: 45px;
+	line-height: 75px;
+}
+
+#zero { /* Wider zero button. */
+	grid-column: 0 / 3;
+	width: 165px;
+	border-radius: 45%;
+	letter-spacing: 90px;
+}
+
+#clear {  /* Light gray buttons */
+	background-color: #a6a6a6;
+	color: #000000;
+	font-size: 32px;
+}
+
+#divide, #multiply, #subtract, #add, #equals { /* Orange buttons */
+	background-color: #ff9501;
+	color: #FFFFFF;
+}
+
+#seven, #eight, #nine, #four, #five, #six, #one, #two, #three, #zero, #decimal { /* Dark gray buttons */
+	background-color: #333333;
+	color: #FFFFFF;
+}
+
+#blank1, #blank2 { /* Blank buttons; may be used later for % and +/- buttons. */
+	background-color: #000000;
+}

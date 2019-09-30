@@ -1,6 +1,6 @@
-# JavaScript Calculator
+# React Calculator
 
-The Front End Libraries - JavaScript Calculator project for freeCodeCamp.
+The Front End Libraries - React Calculator project for freeCodeCamp.
 
 ## Requirements
 
